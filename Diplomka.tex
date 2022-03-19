@@ -62,10 +62,8 @@
 
 \usepackage{comment}
 
-
-
-
-
+\usepackage[sorting=none]{biblatex}
+\addbibresource{Refer.bib}
 
 
 
@@ -206,12 +204,16 @@ $ $
 
 
 %-----<<< REFERENCES >>>-----
-\bibliographystyle{\cestaStyles COP}
-\bibliography{\cestaStyles Refer,\cestaStyles Refer_BP}%references from BIBTEX
+%\bibliographystyle{\cestaStyles COP}
+%\bibliography{\cestaStyles Refer,\cestaStyles Refer_BP}%references from BIBTEX
 \addcontentsline{toc}{chapter}{Literatura}
+\printbibliography
+% Biblatex package for references
 
 %\iffalse
-\input{\cestaStyles Refer.tex}          %input file
+
+%\input{\cestaStyles Refer.tex}          %input file
+
 %\fi
 \newpage\thispagestyle{empty}
 %-----<<< ---------- >>>-----
